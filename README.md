@@ -16,7 +16,7 @@ All the Trained models for each tasks can be found [here](https://drive.google.c
 In this phase we filtered out images containing built structures using deep learning technique called semantic segmentation.
 
 #### Building Segmentation
-Semantic segmentation is process of labelling each pixel of an image belonging to similar class. Village Finder dataset was fed to U-net architecture for training purpose. In testing phase, Pakistan’s satellite images data is passed to this model which outputs only those images where building density is greater than 0.1%.
+Semantic segmentation is process of labelling each pixel of an image belonging to similar class. Village Finder dataset was fed to U-net architecture for training purpose. In testing phase, Pakistan’s satellite images data is passed to this model which outputs only those images where buildings are present
 
 <br><br>**Results**<br><br>
 ![](images/Results_phase1.png)
