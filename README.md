@@ -53,9 +53,9 @@ In order to train our task specific models more efficiently we used multi task l
 
 **Results**<br><br>
 ![](images/Results_experiment3.png)
-<br><br>Architecture diagram for task specific models is as follow:<br><br>
+
 
 ## The Overall Follow of prediction for a single image is as follows.
-![](images/Results.png)
+![](images/Result.png)
 
 
