@@ -1,13 +1,11 @@
 # MSDS19016_Project_DLSpring2020
 This repository contains code and results for the Course Project by Deep Learning Spring 2020 course offered at Information Technology University, Lahore, Pakistan. This repository is only for learning purposes and is not intended to be used for commercial purposes.
 http://im.itu.edu.pk/deep-learning-spring-2020/
-
-The complete
 # Dataset
 For this research project we have used two different datasets.
-- We have used Village Finder dataset compiled by this paper.Which can be found [here](https://drive.google.com/drive/folders/1REaNUpaD6Dm64v1FEDop20LgJtXvorXz?usp=sharing)
+- We have used Village Finder dataset compiled by [this](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.157.7713&rep=rep1&type=pdf) paper.Which can be found [here](https://drive.google.com/drive/folders/1REaNUpaD6Dm64v1FEDop20LgJtXvorXz?usp=sharing)
 
-- To train our multi task learning model we had compiled a separate data set containing satellite images of different cities of pakistan.We than manually labeled them for differnet features.Dataset along with its labels can be find [here](https://drive.google.com/drive/folders/1krdvIv_RydPIDkCCNyJoFycnCDAidp-K?usp=sharing)
+- To train our multi task learning model we had compiled a separate data set containing satellite images of different cities of pakistan.We than manually labeled them for different features.Dataset along with its labels can be find [here](https://drive.google.com/drive/folders/1krdvIv_RydPIDkCCNyJoFycnCDAidp-K?usp=sharing)
 
 # Models
 All the Trained models for each tasks can be found [here](https://drive.google.com/file/d/1--uh8mXfwMKAH2pL24_yw6RMAC8h-fmu/view?usp=sharing)
@@ -49,7 +47,7 @@ We designed separate models for each task. This allowed us to ensure that we don
 
 
 #### Multi-task Learning
-In order to train our task specific models more efficiently we used multi task learning<sup>[5]</sup>. This method allows different models to share weights with each other and allows the models to generalize better. We used trained VGG16 as backbone of the multi-task architecture and the sub-networks all had similar architecture except for the last dense layer of these subnets. In the last layer softmax with binary cross entropy was used for multi-class problems (prediction of building density, greenery sparsity and layout)  and sigmoid with categorical cross entropy was used for multi-label problem(Prediction of Exposed Soil, Large buildings grass and trees). Results obtained for different experiments are shown below:<br><br>
+In order to train our task specific models more efficiently we used multi task learning. This method allows different models to share weights with each other and allows the models to generalize better. We used trained VGG16 as backbone of the multi-task architecture and the sub-networks all had similar architecture except for the last dense layer of these subnets. In the last layer softmax with binary cross entropy was used for multi-class problems (prediction of building density, greenery sparsity and layout)  and sigmoid with categorical cross entropy was used for multi-label problem(Prediction of Exposed Soil, Large buildings grass and trees). Results obtained for different experiments are shown below:<br><br>
 
 **Results**<br><br>
 ![](images/Results_experiment3.png)
